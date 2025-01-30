@@ -52,7 +52,6 @@ class TestTextoHTML(unittest.TestCase):
         node = TextNode("Alt Text", TextType.IMAGES,
                         "http://example.com/image.jpg")
         html_node = text_node_to_html_node(node)
-        print(html_node)
         self.assertEqual(html_node.props, expected_dic)
 
 
